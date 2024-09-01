@@ -3,8 +3,8 @@ function About(){
     return(
         <><div id="about">
      <h1 className='my-skills-h1'>MY SKILLS</h1>
-    <div style={{display:'flex',justifyContent:'center'}}>
-    <ul style={{textAlign:'start',listStyleType:'none',fontWeight:'bold',color:'white' }}>
+   
+    <ul className='skill-list'>
         <li className="skill-html">
             <p>HTML</p>
             <p style={{color:'black'}}>90%</p>
@@ -26,7 +26,6 @@ function About(){
         <li className="skill-postman"><p>PostMan</p>
         <p style={{color:'black'}}>70%</p></li>
      </ul>
-     </div>
      
         </div>
         </>

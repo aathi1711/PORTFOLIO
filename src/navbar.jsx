@@ -4,7 +4,12 @@ import './App.css'
 const Navbar=()=>{
     const[show,setshow]=useState(false)
     function handleClick(){
-        setshow(true)
+        if(show){
+            setshow(false)
+        }else{
+            setshow(true)
+        }
+        
     }
     function removeClick(){
         setshow(false)
@@ -21,18 +26,6 @@ const Navbar=()=>{
                
                
             </ul>
-            {show && <div className='cont-lines'>
-           <div className="cont-line" onClick={removeClick}>HOME</div>
-           <div className="cont-line">SKILLS</div>
-           <div className="cont-line">PROJECTS</div>
-           <div className="cont-line">CONTACT</div>
-            </div>}
-            <div className='lines' onClick={handleClick}>
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
-            </div>
-            
         </nav>
     )
 }

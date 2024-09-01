@@ -6,6 +6,7 @@ import About from "./about"
 import Contact from "./contact"
 import Projects from './projects'
 import Footer from './footer';
+import BottomNavbar from './bottom-navbar'
 function App() {
 
   return (
@@ -17,7 +18,7 @@ function App() {
       < Projects/>
       <Contact/>
       <Footer/>
-      
+      <BottomNavbar/>
     </>
   )
 }

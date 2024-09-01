@@ -127,34 +127,7 @@ transition-duration: 0.5s;
      border-radius: 50%;
      padding: 30px;
      border: 2px solid white;
-     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
-}
-.lines{
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 40px;
-}
-.line{
-  
-  width:30px;
-  height: 0px;
-  border: 3px solid white;
-  border-radius: 1px;
-  
-}
-.cont-lines{
-  text-align: center;
-  cursor: pointer;
-  position:fixed;
-  right: 5px;
-  background-color:white;
-  color:  rgb(8, 0, 24);;
-  animation: SlideLeft 0.3s ease-in;
+     box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 @keyframes Slide {
   from{
@@ -164,27 +137,17 @@ transition-duration: 0.5s;
     transform: translateX(0);
   }
 }
-@keyframes SlideLeft {
-  from{
-    transform: translateY(-80px);
-  }  
-  to{
-    transform: translateY(20px);
-  }
-}
-  
-.cont-line{
-  padding: 10px;
-}
-.cont-line:hover{
-  background-color:#571ddd;;
-  color: black; 
-  transition-duration: 0.5s;
-}
 .description{
   font-size: medium;
   width: 70%;
   opacity: 0.8;
+}
+.skill-list{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  color: white;
 }
 .my-skills-h1{
   color: rgb(255, 255, 255);
@@ -230,6 +193,7 @@ transition-duration: 0.5s;
   height: fit-content;
   background-image: linear-gradient(to left, rgb(93, 62, 233), rgb(36, 4, 110));
 }
+
 i{
   cursor: pointer;
 }
@@ -237,14 +201,6 @@ i{
   display: flex;
   gap: 1rem;
 }
-/* .media{
-  
-  height: 3rem;
-  width: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .gmail-img{
   height: 10rem;
@@ -258,7 +214,7 @@ i{
   flex-wrap: wrap;
 }
 .project-box{
-  box-shadow: 0px 0px 20px rgba(253, 251, 251, 0.4);
+  box-shadow: 0px 0px 20px rgb(253, 251, 251);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -290,11 +246,12 @@ i{
   width: 25rem;
   height: 2rem;
   background-color: inherit;
-  border: none;
+  border: 2px solid white;
   outline: none;
-  border-bottom: 2px solid white;
   color:white;
   font-size: 2.7vh;
+  border-radius:2px;
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 textarea{
   background-color: inherit;
@@ -302,10 +259,12 @@ textarea{
   font-size: 2.7vh;
   color:white;
   width: 25rem;
-  resize: none;
+  resize: vertical;
+  border: 2px solid white;
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 .submit-btn{
-  padding: 5px;
+  padding: 0.7rem;
   font-size: 2.7vh;
   width: 10rem;
   border: none;
@@ -313,7 +272,7 @@ textarea{
   color: white;
   font-weight: bold;
   border-radius: 5px;
-  box-shadow: 0px 0px 20px rgba(253, 251, 251, 0.4);
+  box-shadow: 0px 0px 20px rgba(165, 255, 255, 0.863);
   cursor: pointer;
   margin-bottom: 3rem;
 }
@@ -327,18 +286,11 @@ textarea{
   gap: 2rem;
  color: white;
 }
-@media screen and (min-width:601px) and (max-width:4500px){
-.lines{
-  display: none;
-}
-.cont-lines{
-  display: none;
-}
 .btn{
   display: flex;
   width: 100%;
   gap: 1rem;
-  padding: 20px;
+  margin-top: 0.5rem;
 }
 .btn button{
   padding: 10px;
@@ -352,17 +304,26 @@ textarea{
 .btn button:hover{
   background-image: linear-gradient(to left,rgb(17, 3, 68), rgb(77, 4, 87) );
 }
+@media screen and (min-width:601px) and (max-width:4500px){
+  .bottom-nav{
+    display: none;
+  }
 
 }
 
 @media screen and (min-width:0px) and (max-width:600px){
     
-     nav ul{
+    
+     nav{
       display: none;
      }
-     .home{
-      height: auto;
-      padding-bottom: 20px;
+     textarea{
+      font-size: 2vh;
+      width: 80%;
+     }
+     #home{
+      
+      height: fit-content;
      }
      .intro{
       text-align: center;
@@ -371,12 +332,69 @@ textarea{
       width: 100%;
      }
      .profile img{
-      display: none;
+      margin-top: 2rem;
+      height: 80%;
+      width: 80%;
      }
      .description{
       width: 100%;
      }
     
+     .skill-html, .skill-react, .skill-js{
     
-    
+      width: 80%;
+     
+    }
+    .skill-msql, .skill-postman{
+     
+      width: 80%;
+      
+    }
+    .skill-node, .skill-express, .skill-mb, .skill-css{
+      
+     width: 80%;
+    }
+    .my-skills-h1{
+        font-size: 3vh;
+    }
+    .form-input{
+      width: 80%;
+      font-size: 2vh;
+    }
+    .view-app{
+      font-size: 2vh;
+    }
+    .btn{
+      justify-content: center;
+    }
+    .bottom-nav{
+      height: 4rem;
+      background-color: rgb(63, 1, 114);
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .bottom-nav-list{
+       color: white;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+      width: 4rem;
+      gap: 0.5rem;
+      padding: 2px;
+    }
+    .bottom-nav-list:hover{
+      background-color: rgba(137, 43, 226, 0.678);
+    }
+    .footer{
+      margin-bottom: 4rem;
+    }
 }
