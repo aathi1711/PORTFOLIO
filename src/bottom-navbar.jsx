@@ -3,10 +3,10 @@ const BottomNavbar = ()=>{
         <>
         <div className="bottom-nav">
            <div className="bottom-nav-list">
-           <i class="fa-solid fa-home fa-xl"></i>
+           <i className="fa-solid fa-home fa-xl"></i>
             <a href="#home">Home</a></div>
            <div className="bottom-nav-list">
-            <i class="fa-solid fa-briefcase fa-xl"></i><a href="#about">Skills</a></div>
+            <i className="fa-solid fa-briefcase fa-xl"></i><a href="#about">Skills</a></div>
            <div className="bottom-nav-list">
            <i className="fa-solid fa-server fa-xl"></i><a href="#projects">Projects</a></div>
            <div className="bottom-nav-list">

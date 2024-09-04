@@ -1,6 +1,8 @@
 import { useState } from "react"
+import sendMailApi from "./api";
 
 function Contact(){
+  const[Loading,setLoading]=useState(false)
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -15,8 +17,11 @@ function Contact(){
           [name]: value,
         });
       };
-      const handleSubmit = (e) =>{
+      const handleSubmit = async(e) =>{
         e.preventDefault()
+        setLoading(true)
+        await sendMailApi(formData)
+        setLoading(false)
         setFormData({
             name: '',
             email: '',
@@ -67,7 +72,9 @@ function Contact(){
         value={formData.message}
         onChange={handleChange}
         />
-        <button type="submit" className="submit-btn">submit</button>
+        <button type="submit" className="submit-btn">
+        {Loading ? <div className="spinner"></div> : 'submit'}
+        </button>
        </form>
       
        </div>

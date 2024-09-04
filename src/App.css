@@ -193,7 +193,23 @@ transition-duration: 0.5s;
   height: fit-content;
   background-image: linear-gradient(to left, rgb(93, 62, 233), rgb(36, 4, 110));
 }
+.spinner {
+  border: 3px solid rgba(0, 0, 0, 0.1); /* Light grey border */
+  border-top: 3px solid #3498db; /* Blue border */
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  animation: spin 1s linear infinite;
+}
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 i{
   cursor: pointer;
 }
@@ -222,10 +238,26 @@ i{
   align-items: center;
   background-image: linear-gradient(to left, rgb(57, 57, 100), rgb(23, 23, 143));
   padding: 1rem;
+  max-width: 20rem;
+  width: 90%;
 }
 .project-title{
   text-align: center;
   color:white;
+}
+.used-techs{
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+
+}
+.tech{
+  border: 1px solid white;
+  color: white;
+  padding: 0rem 0.2rem 0rem 0.2rem;
+  border-radius: 0.7rem;
 }
 .view-app{
   padding: 5px;
@@ -235,6 +267,8 @@ i{
   background-image: linear-gradient(to left, rgb(15, 146, 140), rgb(3, 96, 112));
   color: white;
   font-weight: bold;
+  border: 1px solid white;
+  border-radius: 0.3rem;
 }
 .query-form{
   display: flex;
@@ -251,7 +285,12 @@ i{
   color:white;
   font-size: 2.7vh;
   border-radius:2px;
-  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px rgba(214, 214, 214, 0.815);
+  padding-left: 0.5rem;
+}
+.form-input::placeholder{
+  color: white;
+  opacity: 0.8;
 }
 textarea{
   background-color: inherit;
@@ -261,13 +300,20 @@ textarea{
   width: 25rem;
   resize: vertical;
   border: 2px solid white;
-  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px rgba(214, 214, 214, 0.815);
+  height: 5rem;
+}
+textarea::placeholder{
+  color: white;
+  opacity: 0.8;
+  padding-left: 0.5rem;
 }
 .submit-btn{
   padding: 0.7rem;
   font-size: 2.7vh;
   width: 10rem;
   border: none;
+  height: 2.5rem;
   background-image: linear-gradient(to left, rgb(15, 146, 140), rgb(3, 96, 112));
   color: white;
   font-weight: bold;
@@ -275,6 +321,9 @@ textarea{
   box-shadow: 0px 0px 20px rgba(165, 255, 255, 0.863);
   cursor: pointer;
   margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer{
   background-color: rgb(8, 2, 36);
