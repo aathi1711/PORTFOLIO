@@ -2,29 +2,13 @@ import { useState } from 'react'
 import './App.css'
 
 const Navbar=()=>{
-    const[show,setshow]=useState(false)
-    function handleClick(){
-        if(show){
-            setshow(false)
-        }else{
-            setshow(true)
-        }
-        
-    }
-    function removeClick(){
-        setshow(false)
-    }
     return(
-        <nav>
-        
-            <ul>
-               <li ><a href='#home'>HOME</a></li>
-              <li><a href='#about'>SKILLS</a></li>
-              <li><a href='#projects'>PROJECTS</a></li>
-              <li><a href='#contact'>CONTACT</a></li>
-               
-               
-               
+        <nav className=' h-12 text-indigo-900 sticky top-0 bg-slate-100 font-bold hidden sm:block'>
+            <ul className='flex items-center h-full gap-4 relative'>
+               <li className='rounded hover:border-indigo-900 ml-2' ><a href='#home'>HOME</a></li>
+              <li className='rounded hover:border-indigo-900'><a href='#about'>SKILLS</a></li>
+              <li className='rounded hover:border-indigo-900'><a href='#projects'>PROJECTS</a></li>
+              <li className='rounded hover:border-indigo-900'><a href='#contact'>CONTACT</a></li>
             </ul>
         </nav>
     )
