@@ -1,16 +1,26 @@
-import { useState } from 'react'
-import './App.css'
-
+ import { Link } from 'react-router-dom'
+ 
 const Navbar=()=>{
+    let lists = [{
+        name:'Home',
+        path:'/'
+    },{
+        name:'Skills',
+        path:'/skills'
+    },{
+        name:'Projects',
+        path:'/projects'
+    },{
+        name:'Contacts',
+        path:'/contacts'
+    }]
     return(
-        <nav className=' h-12 text-indigo-900 sticky top-0 bg-slate-100 font-bold hidden sm:block'>
-            <ul className='flex items-center h-full gap-4 relative'>
-               <li className='rounded hover:border-indigo-900 ml-2' ><a href='#home'>HOME</a></li>
-              <li className='rounded hover:border-indigo-900'><a href='#about'>SKILLS</a></li>
-              <li className='rounded hover:border-indigo-900'><a href='#projects'>PROJECTS</a></li>
-              <li className='rounded hover:border-indigo-900'><a href='#contact'>CONTACT</a></li>
-            </ul>
-        </nav>
+        <div className='flex h-12 items-center justify-between z-10 w-screen fixed top-0  hidden sm:flex'>
+            <h1 className='pl-5 font-semibold text-violet-900 text-3xl font-kanit select-none'>PortFolio</h1>
+            <div className='flex gap-2 pr-5  font-semibold font-reem '>
+            {lists.map((list,index)=>(<Link key={index} className='hover:-translate-y-1 transition duration-250 hover:text-violet-600 duration-200' to={list.path}>{list.name}</Link>))}
+            </div>
+        </div>
     )
 }
 export default Navbar
