@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const BottomNavbar = ()=>{
     return(
         <>
-        <div className="md:hidden h-16 bg-amber-400 fixed rounded-t-lg bottom-0 flex gap-4 justify-evenly items-center pt-5 w-full text-blue-950">
+        <div className="md:hidden h-16 bg-amber-400 fixed rounded-t-lg bottom-0 flex gap-4 justify-evenly items-center pt-5 w-screen text-blue-950">
            <div className="p-1 flex flex-col items-center justify-end gap-2 h-3/4">
            <i className="fa-solid fa-home fa-xl"></i>
             <Link to='/'>Home</Link></div>

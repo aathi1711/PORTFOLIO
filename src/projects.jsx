@@ -24,8 +24,8 @@ const Projects = ()=>{
 
     ]
     return(
-        <div className='min-h-screen lg:pt-12 pt-5 pb-20 bg-gradient-to-b from-slate-900 to-slate-800'>
-        <h1 className='mb-4 text-5xl font-bold text-amber-400 font-dedact underline text-center pt-4 select-none'>MY PROJECTS</h1>
+        <div className='min-h-screen lg:pt-12 pt-5 pb-20 mt-12 bg-gradient-to-b from-slate-900 to-slate-800'>
+        <h1 className='mb-4 md:text-5xl text-3xl font-bold text-amber-400 font-dedact underline text-center pt-4 select-none'>MY PROJECTS</h1>
             <div className=" animate-fade flex gap-5 justify-center flex-wrap  ">
               {projects.map((val)=>
               <div className="p-8 flex flex-col justify-between border h-96 w-11/12 lg:w-96 backdrop-blur-sm  bg-white/10 rounded-xl text-white">

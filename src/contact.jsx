@@ -33,12 +33,11 @@ function Contact(){
       }
     return(
        <>
-       <div className=" bg-gradient-to-b from-slate-900 to-slate-800 delay-500 h-screen flex  flex-col justify-center font-reem">
-       <h1 className='mb-10 text-5xl font-bold underline text-amber-400 font-dedact text-center  select-none'>Get in Touch</h1>
-       <form className="animate-slideOut flex flex-col w-full items-center gap-8" onSubmit={handleSubmit}>
+       <div className=" bg-gradient-to-b from-slate-900 to-slate-800 delay-500 h-screen flex w-screen flex-col justify-center font-reem">
+       <h1 className='mb-10 md:text-5xl text-3xl font-bold underline text-amber-400 font-dedact text-center  select-none'>Get in Touch</h1>
+       <form className="animate-slideOut flex flex-col w-full  max-sm:w-96 items-center gap-8" onSubmit={handleSubmit}>
         <input 
         type="text"
-        
         name="name"
         className="sm:w-11/12 max-w-96 h-10 focus:outline-none rounded pl-2 border border-slate-400 bg-transparent text-slate-200"
         required
