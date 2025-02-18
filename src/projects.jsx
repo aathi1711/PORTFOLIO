@@ -1,58 +1,55 @@
-import gmailImg from './assets/gmail-clone.png'
-import urlshortImg from './assets/url-shortner.png'
-import todoImg from './assets/todo.png'
-import './App.css'
 const Projects = ()=>{
+    const projects = [
+        {
+            title:'Gmail Clone',
+            description:'Gmail clone website with essential features like sending and receiving emails, managing drafts, trash, and starred messages. The application is secured with JWT authentication and offers a responsive, user-friendly interface',
+            tech:['React','MongoDb','Express','NodeJs','Tailwind CSS'],
+            githubUrl:'',
+            DeployUrl:'https://gmail-clone-1711.netlify.app'
+        },
+        {
+            title:'URL Shortner',
+            description:'A secure URL shortener web application where users can generate, store, and manage short URLs linked to their accounts. Protected by JWT authentication, it ensures data privacy and accessibility anytime, anywhere.',
+            tech:['React','MongoDb','Express','NodeJs','Tailwind CSS'],
+            githubUrl:'',
+            DeployUrl:'https://shortly-11.netlify.app/'
+        },
+        {
+            title:'Todo Application',
+            description:'Gmail clone website with essential features like sending and receiving emails, managing drafts, trash, and starred messages. The application is secured with JWT authentication and offers a responsive, user-friendly interface',
+            tech:['React'],
+            githubUrl:'',
+            DeployUrl:''
+        },
+
+    ]
     return(
-        <>
-        <div className='h-screen mt-12'>
-        <h1 className='mb-4 text-3xl font-bold text-indigo-500 font-kanit text-center pt-4 select-none'>MY PROJECTS</h1>
-            <div className="animate-slideIn delay-500 snap-x flex gap-2 justify-center flex-wrap font-reem ">
-                <div className="
-                flex flex-col justify-between scroll-ml-6 snap-start
-                w-full max-w-96 items-center gap-2 text-white
-                bg-gradient-to-l from-blue-800 to-indigo-800 border-2 rounded-xl">
-               <img className=' w-11/12  h-48 max-w-72 mt-4' src={gmailImg}/> 
-               <h3 className='font-bold text-xl'>Gmail Clone</h3>
-               <div className='flex w-11/12 flex-wrap justify-center gap-2'>
-                <div className='border border-white rounded-xl px-2'>ReactJs</div>
-                <div className='border border-white rounded-xl px-2'>MongoDb</div>
-                <div className='border border-white rounded-xl px-2'>ExpressJs</div>
-                <div className='border border-white rounded-xl px-2'>NodeJs</div>
-                <div className='border border-white rounded-xl px-2'>Jwt</div>
-                <div className='border border-white rounded-xl px-2'>Bootstrap</div>
-               </div>
-               <button className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-600 duration-300 p-2 font-bold w-48 mb-4 bg-indigo-500 rounded  border'><a href='https://gmail-clone-1711.netlify.app/' target='_blank'>View Application</a></button>    
+        <div className='min-h-screen lg:pt-12 pt-5 pb-20 bg-gradient-to-b from-slate-900 to-slate-800'>
+        <h1 className='mb-4 text-5xl font-bold text-amber-400 font-dedact underline text-center pt-4 select-none'>MY PROJECTS</h1>
+            <div className=" animate-fade flex gap-5 justify-center flex-wrap  ">
+              {projects.map((val)=>
+              <div className="p-8 flex flex-col justify-between border h-96 w-11/12 lg:w-96 backdrop-blur-sm  bg-white/10 rounded-xl text-white">
+                <div className="">
+                    <h1 className="font-semibold text-2xl">{val.title}</h1>
+                    <p className="font-san ">{val.description}</p>
                 </div>
-                <div className="flex flex-col justify-between w-full max-w-96 items-center
-                bg-gradient-to-l from-blue-800 to-indigo-800 border-2 rounded-xl
-                gap-2 text-white scroll-ml-6 snap-start">
-               <img className=' w-11/12 h-48 max-w-72 mt-4' src={urlshortImg}/>  
-               <h3 className='font-bold text-xl'>Url Shortner</h3>
-               <div className='flex w-11/12 flex-wrap justify-center gap-2'>
-                <div className='border border-white rounded-xl px-2'>ReactJs</div>
-                <div className='border border-white rounded-xl px-2'>MongoDb</div>
-                <div className='border border-white rounded-xl px-2'>ExpressJs</div>
-                <div className='border border-white rounded-xl px-2'>NodeJs</div>
-                <div className='border border-white rounded-xl px-2'>Jwt</div>
-                <div className='border border-white rounded-xl px-2'>Bootstrap</div>
-               </div>
-               <button className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-600 duration-300 p-2 font-bold w-48 bg-indigo-500 rounded  border mb-4'><a href='https://jolly-florentine-713b44.netlify.app/' target='_blank'>View Application</a></button>       
+                <div>
+                    <div className="flex gap-1 flex-wrap justify-end">
+                     {val.tech.map((tech)=>
+                     <div className="border rounded-full px-2 ">{tech}</div>
+                    )}
+                    </div>   
+                    <div className="flex justify-end mt-5 gap-2 font-semibold">
+                        <button className=" rounded h-12 w-28  bg-blue-800 text-sm hover:bg-blue-700"><a href={val.githhubUrl}>Github Link</a></button>
+                        <button  className="rounded h-12 w-28  bg-blue-800 text-sm hover:bg-blue-700"><a href={val.DeployUrl} target="_blank">Deployed Link</a></button>
+                    </div>
                 </div>
-                <div className="flex flex-col justify-between w-full scroll-ml-6 snap-start
-                bg-gradient-to-l from-blue-800 to-indigo-800 border-2 rounded-xl
-                max-w-96 items-center gap-2 text-white">
-               <img className=' w-11/12 h-48 max-w-72 mt-4' src={todoImg}/>  
-               <h3 className='font-bold text-xl'>Todo App</h3>
-               <div className='flex w-11/12 flex-wrap justify-center gap-2'>
-                <div className='border border-white rounded-xl px-2'>ReactJs</div>
-                
-               </div>
-               <button className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-600 duration-300 p-2 font-bold w-48 bg-indigo-500 rounded border mb-4 '><a href='https://reliable-longma-eed964.netlify.app/' target='_blank'>View Application</a></button>       
+              </div>
+            )}
+                      
                 </div>
-            </div>
         </div>
-        </>
+       
     )
 }
 export default Projects;

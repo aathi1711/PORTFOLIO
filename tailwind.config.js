@@ -8,11 +8,15 @@ export default {
     extend: {
       fontFamily:{
           kanit:["Kanit", "sans-serif"],
-          reem:["Reem Kufi", "sans-serif"]
+          reem:["Reem Kufi", "sans-serif"],
+          san:["Didact Gothic"," serif"],
+          dedact:["Merriweather", "serif"]
       },
       animation: {
         slideIn: 'slideIn 1s ease-out forwards',
         slideOut: 'slideOut 1s ease-out forwards',
+        fade: 'fadeIn 2s ease-in forwards',
+        bouncing:'bounce 2s'
       },
       keyframes: {
         slideIn: {
@@ -26,6 +30,10 @@ export default {
         slideBottom: {
           '0%': { transform: 'translateY(100%)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
         },
       },
     },

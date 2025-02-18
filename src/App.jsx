@@ -18,14 +18,8 @@ function App() {
        <Route index element={<Home/>}/>
        <Route path='skills' element={<About/>}/>
        <Route path='projects' element={< Projects/>}/>
-       <Route path='contacts' element={<Contact/>}/>
+       <Route path='contact' element={<Contact/>}/>
        </Route>
-       
-      {/* 
-      
-      <Contact/>
-      <Footer/>
-      <BottomNavbar/> */}
       </Routes> 
     </BrowserRouter>
   )
