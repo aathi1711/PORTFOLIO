@@ -43,7 +43,7 @@ const Projects = ()=>{
                     </div>   
                     <div className="flex justify-end mt-5 gap-2 font-semibold">
                         <button className=" rounded h-12   bg-blue-800 text-sm hover:bg-blue-700 px-1"><a href={val.githhubUrl}>Source Code (FE)</a></button>
-                        {!val.githubUrl_be && <button className=" rounded h-12 w-28  bg-blue-800 text-sm hover:bg-blue-700"><a href={val.githhubUrl}>Source Code (BE)</a></button>}
+                        {val.githubUrl_be && <button className=" rounded h-12 w-28  bg-blue-800 text-sm hover:bg-blue-700"><a href={val.githhubUrl}>Source Code (BE)</a></button>}
                         <button  className="rounded h-12 w-28  bg-blue-800 text-sm hover:bg-blue-700"><a href={val.DeployUrl} target="_blank">Deployed Link</a></button>
                     </div>
                 </div>
