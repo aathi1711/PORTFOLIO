@@ -4,16 +4,16 @@ const Projects = ()=>{
             title:'Gmail Clone',
             description:'Gmail clone website with essential features like sending and receiving emails, managing drafts, trash, and starred messages. The application is secured with JWT authentication and offers a responsive, user-friendly interface',
             tech:['React','MongoDb','Express','NodeJs','Tailwind CSS'],
-            githubUrl_fe:'',
-            githubUrl_be:'',
+            githubUrl_fe:'https://github.com/aathi-aathi/new-gmail-frontend.git',
+            githubUrl_be:'https://github.com/aathi-aathi/new-gmail-backend.git',
             DeployUrl:'https://gmail-clone-1711.netlify.app'
         },
         {
             title:'URL Shortner',
             description:'A secure URL shortener web application where users can generate, store, and manage short URLs linked to their accounts. Protected by JWT authentication, it ensures data privacy and accessibility anytime, anywhere.',
             tech:['React','MongoDb','Express','NodeJs','Tailwind CSS'],
-            githubUrl_fe:'',
-            githubUrl_be:'',
+            githubUrl_fe:'https://github.com/aathi-aathi/shortner-fe.git',
+            githubUrl_be:'https://github.com/aathi-aathi/URL-SHORTNER-BACKEND.git',
             DeployUrl:'https://shortly-11.netlify.app/'
         },
         {
@@ -43,7 +43,7 @@ const Projects = ()=>{
                     </div>   
                     <div className="flex justify-end mt-5 gap-2 font-semibold">
                         <button className=" rounded h-12   bg-blue-800 text-sm hover:bg-blue-700 px-1"><a href={val.githhubUrl}>Source Code (FE)</a></button>
-                        {val.githubUrl_be && <button className=" rounded h-12 w-28  bg-blue-800 text-sm hover:bg-blue-700"><a href={val.githhubUrl}>Source Code (BE)</a></button>}
+                        {!val.githubUrl_be && <button className=" rounded h-12 w-28  bg-blue-800 text-sm hover:bg-blue-700"><a href={val.githhubUrl}>Source Code (BE)</a></button>}
                         <button  className="rounded h-12 w-28  bg-blue-800 text-sm hover:bg-blue-700"><a href={val.DeployUrl} target="_blank">Deployed Link</a></button>
                     </div>
                 </div>
