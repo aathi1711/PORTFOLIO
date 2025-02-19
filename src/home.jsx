@@ -23,7 +23,7 @@ const Home =()=>{
                 <div className='flex gap-4 mt-4 font-kanit'>
                     <a href={pdf} target='_blank' className='w-32 duration-200 border-gray-500 border rounded hover:bg-amber-300 hover:border-none'><button className=' 
                    duration-200 p-2  w-32 rounded text-white hover:text-black'>Check Resume</button></a>
-                    <a onClick={()=>navigate('/contacts')} className=' duration-200 border-gray-500 border rounded hover:bg-amber-300 hover:border-none'><button className='hover:text-black text-white duration-200 p-2  w-32 rounded '>Reach me here</button></a>
+                    <a onClick={()=>navigate('/contact')} className=' duration-200 border-gray-500 border rounded hover:bg-amber-300 hover:border-none'><button className='hover:text-black text-white duration-200 p-2  w-32 rounded '>Reach me here</button></a>
                 </div>
             </div>
         </div>
