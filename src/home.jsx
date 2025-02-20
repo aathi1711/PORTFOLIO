@@ -8,8 +8,8 @@ const Home =()=>{
    
      return(
         <div className='flex sm:flex-col h-fit md:h-screen pb-20 bg-gradient-to-b from-slate-900 to-slate-800 justify-center flex-col font-reem font md:flex-row' >
-            <div className=' md:p-32 max-sm:flex justify-center pr-10  mt-4 animate-slideIn delay-500'> 
-               <img className='w-80 max-sm:pl-7 h-96 z-10 object-cover'  src={profile}/>
+            <div className=' md:p-32 max-sm:flex justify-center pr-10   animate-slideIn delay-500'> 
+               <img className='w-80 max-sm:pl-7 h-96 z-10  object-cover'  src={profile}/>
                 </div>
                 <div className=' md:mt-24 max-sm:mt-5 pl-5 select-none animate-fade flex flex-col text-black justify-center items-center md:items-start md:w-1/2 w-full'>
                 <p className='text-4xl max-md:text-3xl text-white'>Hi there,</p>
