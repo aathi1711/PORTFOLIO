@@ -77,8 +77,9 @@ function Contact(){
         {Loading ? <div className="w-5 h-5 border-4 border-t-transparent
             border-slate-500 rounded-full animate-spin" 
             role="status"><span className="sr-only">Loading...</span>
-            </div> : 'submit'}
+            </div> : 'Send'}
         </button>
+        <p className="text-white font-san">© Aathish. All right reserved</p>
        </form>
        </div>
        </>

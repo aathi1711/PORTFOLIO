@@ -20,8 +20,8 @@ const Projects = ()=>{
             title:'Todo Application',
             description:'Gmail clone website with essential features like sending and receiving emails, managing drafts, trash, and starred messages. The application is secured with JWT authentication and offers a responsive, user-friendly interface',
             tech:['React'],
-            githubUrl_fe:'',
-            DeployUrl:''
+            githubUrl_fe:' https://reliable-longma-eed964.netlify.app/',
+            DeployUrl:'https://github.com/aathi-aathi/REACT-TODO.git'
         },
 
     ]
@@ -42,8 +42,10 @@ const Projects = ()=>{
                     )}
                     </div>   
                     <div className="flex justify-end mt-5 gap-2 font-semibold">
-                        <button className=" rounded h-12   bg-blue-800 text-sm hover:bg-blue-700 px-1"><a href={val.githhubUrl}>Source Code (FE)</a></button>
-                        {val.githubUrl_be && <button className=" rounded h-12 w-28  bg-blue-800 text-sm hover:bg-blue-700"><a href={val.githhubUrl}>Source Code (BE)</a></button>}
+                        <button className=" rounded h-12   bg-blue-800 text-sm hover:bg-blue-700 px-1">
+                            <a href={val.githubUrl_fe} target="_blank">Source Code (FE)</a></button>
+                        {val.githubUrl_be && <button className=" rounded h-12 w-28  bg-blue-800 text-sm hover:bg-blue-700">
+                            <a href={val.githubUrl_be} target="_blank">Source Code (BE)</a></button>}
                         <button  className="rounded h-12 w-28  bg-blue-800 text-sm hover:bg-blue-700"><a href={val.DeployUrl} target="_blank">Deployed Link</a></button>
                     </div>
                 </div>
