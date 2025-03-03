@@ -3,7 +3,7 @@ function About(){
     let  skills = ['HTML','CSS','JavaScript','NodeJs','ExpressJs','MongoDB','MySQL','RESTful API','ReactJs','Tailwind CSS','Bootstrap','JWT','Post Man','Responsive Design','Netlify','Vercel','Bcrypt']
     return(
 
-        <div  className='flex min-h-screen bg-gradient-to-b mt-12 from-slate-900 to-slate-800 flex-col md:flex-row '>
+        <div id='skills'  className='flex min-h-screen  flex-col md:flex-row '>
         <div className='animate-fade flex flex-col items-center justify-center gap-4 w-full lg:w-1/2 '>    
      <h1 className='  mb-4 mt-5 md:text-5xl text-3xl font-extrabold text-amber-400 underline text-center font-dedact select-none'>My Skills</h1>
      <p className='text-center text-slate-100 px-2'>Proficient in MERN stack development, with expertise in building dynamic and secure web applications using MongoDB, Express.js, React.js, and Node.js.</p>

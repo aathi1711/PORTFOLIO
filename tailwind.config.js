@@ -13,8 +13,8 @@ export default {
           dedact:["Merriweather", "serif"]
       },
       animation: {
-        slideIn: 'slideIn 1s ease-out forwards',
-        slideOut: 'slideOut 1s ease-out forwards',
+        slideIn: 'slideIn 2s ease-out forwards',
+        slideOut: 'slideOut 2s ease-out forwards  ',
         fade: 'fadeIn 2s ease-in forwards',
         bouncing:'bounce 2s'
       },

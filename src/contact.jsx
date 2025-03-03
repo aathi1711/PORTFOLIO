@@ -1,6 +1,5 @@
 import { useState } from "react"
 import sendMailApi from "./api";
-import Footer from "./footer";
 
 function Contact(){
   const[Loading,setLoading]=useState(false)
@@ -33,7 +32,7 @@ function Contact(){
       }
     return(
        <>
-       <div className="h-screen   bg-gradient-to-b from-slate-900 to-slate-800  pt-16 font-reem">
+       <div id="contact" className="h-screen pt-16 font-reem">
        <h1 className='md:text-5xl text-3xl font-bold underline text-amber-400 font-dedact mt-5 text-center  select-none'>Get in Touch</h1>
        <form className="flex flex-col  items-center " onSubmit={handleSubmit}>
         <input 
@@ -79,7 +78,9 @@ function Contact(){
             role="status"><span className="sr-only">Loading...</span>
             </div> : 'Send'}
         </button>
+    
         <p className="text-white font-san">© Aathish. All right reserved</p>
+
        </form>
        </div>
        </>
