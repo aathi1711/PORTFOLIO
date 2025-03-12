@@ -6,12 +6,12 @@ const Home =()=>{
      return(
         <div className='flex sm:flex-col h-fit md:h-screen font-dedact md:pb-20 justify-center flex-col font-reem font md:flex-row' >
             <div className=' md:p-32 max-sm:flex justify-center   animate-slideIn delay-500'> 
-               <img className='w-96  h-96 max-md:w-48 max-md:h-48 max-md:mt-16 ml-5 z-10 rounded-full  bg-white shadow-2xl shadow-sky-500 p-2 object-cover'  src={profile}/>
+               <img className='w-96  h-96 max-md:w-48 max-md:h-48 max-md:mt-16 md:ml-5 z-10 rounded-full  bg-white shadow-2xl shadow-sky-500 p-2 object-cover'  src={profile}/>
                 </div>
-                <div className=' md:mt-24 max-sm:mt-5 pl-5 select-none animate-fade flex flex-col text-black justify-center items-center md:items-start md:w-1/2 w-full'>
+                <div className=' md:mt-24 max-sm:mt-5 md:pl-5 select-none animate-fade flex flex-col text-black justify-center items-center md:items-start md:w-1/2 '>
                 <p className='text-4xl max-md:text-3xl text-white'>Hi there,</p>
                 <h1 className='text-6xl max-md:text-4xl font-bold text-white '> I am <span className='bg-gradient-to-r from-sky-400 to-sky-600 bg-clip-text text-transparent'>Aathish</span></h1>
-                <h1 className='text-2xl max-md:text-xl max-md:text-center text-white font-kanit'>A Full Stack Developer / Building Scalable Web Applications</h1>
+                <h1 className='text-2xl max-md:text-xl max-md:text-center px-2 text-white font-kanit'>A Full Stack Developer / Building Scalable Web Applications</h1>
                 <p className='w-3/4 max-md:text-center mt-2  text-white font-san opacity-90 '>A skilled MERN Stack Developer with a strong foundation in building
                       dynamic, responsive web applications. Proficient in crafting seamless user experiences
                       with React.js, Node.js, Express.js, and MongoDB. Experienced in developing secure, 
