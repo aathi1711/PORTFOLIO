@@ -1,23 +1,48 @@
-import './App.css'
-function About(){
-    let  skills = ['HTML','CSS','JavaScript','NodeJs','ExpressJs','MongoDB','MySQL','RESTful API','ReactJs','Tailwind CSS','Bootstrap','JWT','Post Man','Responsive Design','Netlify','Vercel','Bcrypt']
-    return(
+import React from "react";
 
-        <div id='skills'  className='flex min-h-screen  flex-col md:flex-row '>
-        <div className='animate-fade flex flex-col items-center justify-center gap-4 w-full lg:w-1/2 '>    
-     <h1 className='  mb-4 mt-5 md:text-5xl text-3xl font-extrabold text-amber-400 underline text-center font-dedact select-none'>My Skills</h1>
-     <p className='text-center text-slate-100 px-2'>Proficient in MERN stack development, with expertise in building dynamic and secure web applications using MongoDB, Express.js, React.js, and Node.js.</p>
-    <ul className='flex flex-wrap w-full max-w-96  items-center justify-center text-white rounded-xl font-reem gap-4'>
-        {skills.map((list)=>(
-             <li className='backdrop-blur-sm  bg-white/10 cursor-pointer hover:scale-75 duration-300 border rounded-xl border-2 font-bold  p-2'>{list}</li>
-        ))}
-     </ul>
+const About = () => {
+  return (
+    <section id='about' className=" text-white py-12 px-6 md:px-16 lg:px-32">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className=" md:text-5xl text-3xl font-extrabold font-dedact font-bold  bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent mb-4">About Me</h2>
+        <p className="text-lg text-gray-300 leading-relaxed  font-san">
+          I'm Aathish, a passionate
+          MERN Stack Developer with a strong focus on building modern, scalable, and high-performing web applications.
+        </p>
+        <div className="mt-6">
+          <h3 className="text-2xl font-semibold text-cyan-400 font-kanit">What I Do</h3>
+          <p className="text-gray-300 mt-2 font-san">
+            I specialize in developing full-stack applications using <span className="font-semibold">MongoDB, Express.js, React, and Node.js</span>. I love solving complex problems and continuously improving my skills to stay ahead in the tech world.
+          </p>
         </div>
-        <div className='animate-fade items-center justify-center hidden lg:flex w-1/2'>
-             <img className=' w-5/6 h-4/6' src='https://joyjeet.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSkills.cbcc8338.png&w=640&q=75'></img>
+        <div className="mt-6">
+          <h3 className="text-2xl font-semibold font-kanit text-cyan-400">My Strengths</h3>
+          <div className="flex justify-center">
+          <ul className='flex flex-col gap-5 w-fit text-gray-300 mt-3 '>
+    
+    <li className='flex gap-2 items-start' ><img src='https://cdn-icons-png.flaticon.com/128/9618/9618791.png' className='h-5 w-5 mt-1'/><span>Writing clean, optimized, and scalable code.</span></li>
+    <li className='flex gap-2 items-start'><img src='https://cdn-icons-png.flaticon.com/128/9618/9618791.png' className='h-5 w-5 mt-1'/><span>Building responsive and user-friendly interfaces.</span></li>
+    <li className='flex gap-2 items-start'><img src='https://cdn-icons-png.flaticon.com/128/9618/9618791.png' className='h-5 w-5 mt-1'/><span>Integrating TailwindCSS & Bootstrap for sleek designs.</span></li>
+    <li className='flex gap-2 items-start'><img src='https://cdn-icons-png.flaticon.com/128/9618/9618791.png' className='h-5 w-5 mt-1'/><span>Working with RESTful APIs & database management.</span></li>
+  </ul>
+          </div>
+          
         </div>
-       
+        <div className="mt-6">
+          <h3 className="text-2xl font-semibold font-kanit text-cyan-400">My Goals</h3>
+          <p className="text-gray-300 font-san mt-2">
+            My goal is to contribute to innovative projects, learn new technologies, and grow as a software developer. I'm always open to new opportunities and collaborations!
+          </p>
         </div>
-    )
-}
-export default About
+        <div className="mt-6">
+          <h3 className="text-2xl font-semibold font-kanit text-cyan-400">Fun Fact</h3>
+          <p className="text-gray-300 font-san mt-2">
+            When I’m not coding, I enjoy learning about new tech trends, improving my communication skills, and staying fit!
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;

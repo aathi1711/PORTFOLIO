@@ -27,26 +27,26 @@ const Projects = ()=>{
     ]
     return(
         <div id="projects">
-        <h1 className='mb-5 md:text-5xl text-3xl font-bold text-amber-400 font-dedact underline text-center pt-4 select-none'>My Projects</h1>
+        <h1 className='mb-5 md:text-5xl text-3xl font-bold bg-gradient-to-r from-sky-300 to-sky-600 bg-clip-text text-transparent font-dedact  text-center pt-8 select-none'>My Projects</h1>
             <div className=" animate-fade flex gap-5 justify-center flex-wrap  ">
               {projects.map((val)=>
-              <div className="p-8 flex flex-col justify-between border h-96 w-11/12 lg:w-96 backdrop-blur-sm  bg-white/10 rounded-xl text-white">
+              <div className="p-8 flex flex-col justify-between border h-96 w-11/12 lg:w-96 bg-gray-800 rounded-xl text-white">
                 <div className="">
-                    <h1 className="font-semibold text-2xl">{val.title}</h1>
-                    <p className="font-san ">{val.description}</p>
+                    <h1 className="font-semibold text-2xl text-cyan-400">{val.title}</h1>
+                    <p className="font-san text-gray-200 ">{val.description}</p>
                 </div>
                 <div>
-                    <div className="flex gap-1 flex-wrap justify-end">
+                    <div className="flex gap-1 flex-wrap  text-gray-200 justify-end">
                      {val.tech.map((tech)=>
                      <div className="border rounded-full px-2 ">{tech}</div>
                     )}
                     </div>   
                     <div className="flex justify-end mt-5 gap-2 font-semibold">
-                        <button className=" rounded h-12   bg-blue-800 text-sm hover:bg-blue-700 px-1">
+                        <button className=" rounded h-12 bg-gradient-to-r from-sky-400 to-sky-600 text-sm hover:bg-blue-700 px-1">
                             <a href={val.githubUrl_fe} target="_blank">Source Code (FE)</a></button>
-                        {val.githubUrl_be && <button className=" rounded h-12 w-28  bg-blue-800 text-sm hover:bg-blue-700">
+                        <button  className="rounded h-12 w-28 bg-gradient-to-r from-orange-500 to-red-600 text-sm hover:bg-blue-700"><a href={val.DeployUrl} target="_blank">Deployed Link</a></button>
+                     {val.githubUrl_be && <button className=" rounded h-12 w-28  bg-gradient-to-r from-sky-400 to-sky-600 text-sm hover:bg-blue-700">
                             <a href={val.githubUrl_be} target="_blank">Source Code (BE)</a></button>}
-                        <button  className="rounded h-12 w-28  bg-blue-800 text-sm hover:bg-blue-700"><a href={val.DeployUrl} target="_blank">Deployed Link</a></button>
                     </div>
                 </div>
               </div>
