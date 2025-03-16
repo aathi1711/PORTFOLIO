@@ -4,24 +4,32 @@ const Projects = ()=>{
             title:'Gmail Clone',
             description:'Gmail clone website with essential features like sending and receiving emails, managing drafts, trash, and starred messages. The application is secured with JWT authentication and offers a responsive, user-friendly interface',
             tech:['React','MongoDb','Express','NodeJs','Tailwind CSS'],
-            githubUrl_fe:'https://github.com/aathi-aathi/new-gmail-frontend.git',
-            githubUrl_be:'https://github.com/aathi-aathi/new-gmail-backend.git',
+            githubUrl_fe:'https://github.com/aathi1711/new-gmail-frontend.git',
+            githubUrl_be:'https://github.com/aathi1711/new-gmail-backend.git',
             DeployUrl:'https://gmail-clone-1711.netlify.app'
         },
         {
             title:'URL Shortner',
             description:'A secure URL shortener web application where users can generate, store, and manage short URLs linked to their accounts. Protected by JWT authentication, it ensures data privacy and accessibility anytime, anywhere.',
             tech:['React','MongoDb','Express','NodeJs','Tailwind CSS'],
-            githubUrl_fe:'https://github.com/aathi-aathi/shortner-fe.git',
-            githubUrl_be:'https://github.com/aathi-aathi/URL-SHORTNER-BACKEND.git',
+            githubUrl_fe:'https://github.com/aathi1711/shortner-fe.git',
+            githubUrl_be:'https://github.com/aathi1711/URL-SHORTNER-BACKEND.git',
             DeployUrl:'https://shortly-11.netlify.app/'
+        },
+        {
+            title:'RBAC - Hospital Managment',
+            description:'A Role-Based Access Control (RBAC) hospital management system that streamlines appointments, patient records, and staff management with role-specific panels.',
+            tech:['React','MongoDb','Express','NodeJs','Tailwind CSS'],
+            githubUrl_fe:'https://github.com/aathi1711/rbac-frontend.git',
+            githubUrl_be:'https://github.com/aathi1711/rbac-backend.git',
+            DeployUrl:'https://wehealthhospital.netlify.app/'
         },
         {
             title:'Todo Application',
             description:'Gmail clone website with essential features like sending and receiving emails, managing drafts, trash, and starred messages. The application is secured with JWT authentication and offers a responsive, user-friendly interface',
             tech:['React'],
             githubUrl_fe:' https://reliable-longma-eed964.netlify.app/',
-            DeployUrl:'https://github.com/aathi-aathi/REACT-TODO.git'
+            DeployUrl:'https://github.com/aathi1711/REACT-TODO.git'
         },
 
     ]
