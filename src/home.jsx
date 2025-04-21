@@ -1,4 +1,4 @@
-import pdf from './assets/Aathish.pdf'
+import pdf from './assets/Aathish-fsd.pdf'
 import profile from './assets/profile.jpg'
 const Home =()=>{
 

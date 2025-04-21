@@ -17,14 +17,6 @@ const Projects = ()=>{
             DeployUrl:'https://gmail-clone-1711.netlify.app'
         },
         {
-            title:'URL Shortner',
-            description:'A secure URL shortener web application where users can generate, store, and manage short URLs linked to their accounts. Protected by JWT authentication, it ensures data privacy and accessibility anytime, anywhere.',
-            tech:['React','MongoDb','Express','NodeJs','Tailwind CSS','JWT'],
-            githubUrl_fe:'https://github.com/aathi1711/shortner-fe.git',
-            githubUrl_be:'https://github.com/aathi1711/URL-SHORTNER-BACKEND.git',
-            DeployUrl:'https://shortly-11.netlify.app/'
-        },
-        {
             title:'RBAC - Hospital Managment',
             description:'A Role-Based Access Control (RBAC) hospital management system that streamlines appointments, patient records, and staff management with role-specific panels.',
             tech:['React','MongoDb','Express','NodeJs','Tailwind CSS','JWT'],
@@ -32,6 +24,15 @@ const Projects = ()=>{
             githubUrl_be:'https://github.com/aathi1711/rbac-backend.git',
             DeployUrl:'https://wehealthhospital.netlify.app/' 
         },
+        {
+            title:'URL Shortner',
+            description:'A secure URL shortener web application where users can generate, store, and manage short URLs linked to their accounts. Protected by JWT authentication, it ensures data privacy and accessibility anytime, anywhere.',
+            tech:['React','MongoDb','Express','NodeJs','Tailwind CSS','JWT'],
+            githubUrl_fe:'https://github.com/aathi1711/shortner-fe.git',
+            githubUrl_be:'https://github.com/aathi1711/URL-SHORTNER-BACKEND.git',
+            DeployUrl:'https://shortly-11.netlify.app/'
+        },
+       
         {
             title:'Todo Application',
             description:'Gmail clone website with essential features like sending and receiving emails, managing drafts, trash, and starred messages. The application is secured with JWT authentication and offers a responsive, user-friendly interface',
@@ -48,7 +49,7 @@ const Projects = ()=>{
               {projects.map((val)=>
               <div className="p-8 flex flex-col justify-between border h-96 w-11/12 lg:w-96 bg-gray-800 rounded-xl text-white">
                 <div className="">
-                    <h1 className="font-semibold text-2xl text-cyan-400">{val.title}</h1>
+                    <h1 className="font-semibold text-2xl mb-2 text-cyan-400">{val.title}</h1>
                     <p className="font-san text-gray-200 ">{val.description}</p>
                 </div>
                 <div>
@@ -60,7 +61,7 @@ const Projects = ()=>{
                     <div className="flex justify-end mt-5 gap-2 font-semibold">
                         <button className=" rounded h-12 bg-gradient-to-r from-sky-400 to-sky-600 text-sm hover:bg-blue-700 px-1">
                             <a href={val.githubUrl_fe} target="_blank">Source Code (FE)</a></button>
-                        <button  className="rounded h-12 w-28 bg-gradient-to-r from-orange-500 to-red-600 text-sm hover:bg-blue-700"><a href={val.DeployUrl} target="_blank">Deployed Link</a></button>
+                        <button  className="rounded h-12 w-28 bg-gradient-to-r from-orange-500 to-red-600 text-sm hover:bg-blue-700"><a href={val.DeployUrl} target="_blank">Live Site</a></button>
                      {val.githubUrl_be && <button className=" rounded h-12 w-28  bg-gradient-to-r from-sky-400 to-sky-600 text-sm hover:bg-blue-700">
                             <a href={val.githubUrl_be} target="_blank">Source Code (BE)</a></button>}
                     </div>
